@@ -1,0 +1,8 @@
+C:\RameshBiztalkProject\BiztalkSolutions\LeaveProject\bin\Debug\LeaveProject.dll
+C:\RameshBiztalkProject\BiztalkSolutions\LeaveProject\bin\Debug\LeaveProject.pdb
+C:\RameshBiztalkProject\BiztalkSolutions\LeaveProject\obj\Debug\LeaveProject.dll
+C:\RameshBiztalkProject\BiztalkSolutions\LeaveProject\obj\Debug\LeaveProject.pdb
+Y:\RameshBiztalkProject\BiztalkSolutions\LeaveProject\bin\Debug\LeaveProject.dll
+Y:\RameshBiztalkProject\BiztalkSolutions\LeaveProject\bin\Debug\LeaveProject.pdb
+Y:\RameshBiztalkProject\BiztalkSolutions\LeaveProject\obj\Debug\LeaveProject.dll
+Y:\RameshBiztalkProject\BiztalkSolutions\LeaveProject\obj\Debug\LeaveProject.pdb

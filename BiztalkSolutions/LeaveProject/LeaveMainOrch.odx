@@ -1,0 +1,416 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="e1c05f33-3d81-48e5-b85e-034c16bf79d5" LowerBound="1.1" HigherBound="80.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="LeaveProject" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="8d7d2f09-f5d6-4ffc-87ec-ebad874e09fd" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="LeaveRequestSchemaPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2915c0d1-a07c-4208-9b65-71e207527c78" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="52e2f3f1-a4e9-4fac-ba6f-ab35d15fbd77" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.31">
+                    <om:Property Name="Ref" Value="LeaveProject.LeaveRequestSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="5088cc9b-1900-4666-bffd-24c366fb77c9" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="LeaveResponseSchemaPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="260430d1-ce80-41f7-8411-a95954fd918b" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="6c297ab6-5dd1-46de-8985-6b54ed1ed09e" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.32">
+                    <om:Property Name="Ref" Value="LeaveProject.LeaveResponseSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e36617bb-5ac6-4630-bc27-08a9dcfa3de7" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceivedFromHR" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2c657019-5897-4849-b361-2750182245bf" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="b8383e88-c4e3-44e9-a87d-d46dc58d6604" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.31">
+                    <om:Property Name="Ref" Value="LeaveProject.LeaveRequestSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="97dd3cca-d591-4019-b933-c68e8fd3c465" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendToEmpPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="1cb0c471-d2e6-492a-9c74-3c3db805283b" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c98af642-d80e-4247-8ea6-768c0e84fbd7" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.31">
+                    <om:Property Name="Ref" Value="LeaveProject.LeaveRequestSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="ece5f49e-51d1-4c03-a925-34f13f3cc678" ParentLink="Module_ServiceDeclaration" LowerBound="36.1" HigherBound="79.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="LeaveMainOrch" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="CorrelationDeclaration" OID="a98ff2aa-1091-4cd9-b157-57dedf7bd7ea" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="49.1" HigherBound="50.1">
+                <om:Property Name="Type" Value="LeaveProject.CorrelationType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Correlation_1" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="StatementRef" OID="5f5cb1d7-9897-4ff5-9bda-7c08ed352672" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="55.82" HigherBound="55.106">
+                    <om:Property Name="Initializes" Value="True" />
+                    <om:Property Name="Ref" Value="52c02a01-adda-4162-98ab-d9945c92bb1b" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="7f3fc694-985a-4e69-906d-c2d55ef8305e" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="71.74" HigherBound="71.87">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="e351ad4e-d9d0-40e0-b7e6-f98bcee15fdf" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_2" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="StatementRef" OID="5f5b24fc-6fe7-4e90-bb7b-66000ea84fc3" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="73.71" HigherBound="73.84">
+                    <om:Property Name="Initializes" Value="False" />
+                    <om:Property Name="Ref" Value="c51d3a69-b6c9-4d1a-8c99-30f4bb134a4e" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_3" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="483e1142-3f99-44f0-9e56-3353296685e8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="50.1" HigherBound="51.1">
+                <om:Property Name="Type" Value="LeaveProject.LeaveRequestSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgLeaveRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="52e4487d-8db0-4de2-976a-3c780bcdfcf7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="51.1" HigherBound="52.1">
+                <om:Property Name="Type" Value="LeaveProject.LeaveResponseSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MsgLeaveResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="42c9a755-7b3b-4ffd-a920-eeff216c77ca" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="52c02a01-adda-4162-98ab-d9945c92bb1b" ParentLink="ServiceBody_Statement" LowerBound="54.1" HigherBound="56.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="LeaveRequestRecvPort" />
+                    <om:Property Name="MessageName" Value="MsgLeaveRequest" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ReceiveLeaveRequest" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="3f0b88cd-1d58-4822-bda6-367da002edfa" ParentLink="ServiceBody_Statement" LowerBound="56.1" HigherBound="77.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="DecisionBranch" OID="0f464a80-4166-445e-8e0a-48fdf6b081c1" ParentLink="ReallyComplexStatement_Branch" LowerBound="57.13" HigherBound="68.1">
+                        <om:Property Name="Expression" Value="MsgLeaveRequest.Details.NoOfDays&gt;21" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="RuleAccept" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Construct" OID="beefe3e3-02af-4b63-93d1-cde68f5fae4d" ParentLink="ComplexStatement_Statement" LowerBound="59.1" HigherBound="65.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ConstructMessageAccept" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="e1c17cbb-866a-4799-a715-800e4de826ba" ParentLink="ComplexStatement_Statement" LowerBound="62.1" HigherBound="64.1">
+                                <om:Property Name="ClassName" Value="LeaveProject.LeaveRequestToResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="TransformToEmp" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="49f76294-e276-40a0-9f36-328d78d42cdf" ParentLink="Transform_InputMessagePartRef" LowerBound="63.89" HigherBound="63.104">
+                                    <om:Property Name="MessageRef" Value="MsgLeaveRequest" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="f0495bfe-1e32-471f-b10f-0ee550a63be6" ParentLink="Transform_OutputMessagePartRef" LowerBound="63.32" HigherBound="63.48">
+                                    <om:Property Name="MessageRef" Value="MsgLeaveResponse" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="85ce1974-6b61-4e17-821e-04a55fb803e5" ParentLink="Construct_MessageRef" LowerBound="60.27" HigherBound="60.43">
+                                <om:Property Name="Ref" Value="MsgLeaveResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="e16a7ba9-ca51-441b-a6f3-048a99a8237d" ParentLink="ComplexStatement_Statement" LowerBound="65.1" HigherBound="67.1">
+                            <om:Property Name="PortName" Value="LeaveAcceptSendPort" />
+                            <om:Property Name="MessageName" Value="MsgLeaveResponse" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendToEmp" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="ed8f6245-f902-49e1-a5e3-93cdd28a0cdd" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Send" OID="e351ad4e-d9d0-40e0-b7e6-f98bcee15fdf" ParentLink="ComplexStatement_Statement" LowerBound="70.1" HigherBound="72.1">
+                            <om:Property Name="PortName" Value="LeaveRequestToHRPort" />
+                            <om:Property Name="MessageName" Value="MsgLeaveRequest" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="SendToHR" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="c51d3a69-b6c9-4d1a-8c99-30f4bb134a4e" ParentLink="ComplexStatement_Statement" LowerBound="72.1" HigherBound="74.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="ResponseFromHR" />
+                            <om:Property Name="MessageName" Value="MsgLeaveRequest" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="700ccd36-4bf7-4fbc-b15a-609ca04f6996" ParentLink="ComplexStatement_Statement" LowerBound="74.1" HigherBound="76.1">
+                            <om:Property Name="PortName" Value="SendToEmp" />
+                            <om:Property Name="MessageName" Value="MsgLeaveRequest" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ebcb245a-eb18-402c-94b2-a755e515ca08" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="39.1" HigherBound="41.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="LeaveProject.LeaveRequestSchemaPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LeaveRequestRecvPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="362bbaf5-ea1e-4ac4-aac4-9112c10ee4ec" ParentLink="PortDeclaration_CLRAttribute" LowerBound="39.1" HigherBound="40.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="fd373f41-6efc-4170-a7f7-9f9a207976e8" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="41.1" HigherBound="43.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="18" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="LeaveProject.LeaveResponseSchemaPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LeaveAcceptSendPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="7981cd00-c5b3-4d8a-9b3b-4ce5bf4961fb" ParentLink="PortDeclaration_CLRAttribute" LowerBound="41.1" HigherBound="42.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="aa952b06-8c47-4196-a011-67e29afb0d09" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="43.1" HigherBound="45.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="11" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="LeaveProject.LeaveRequestSchemaPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LeaveRequestToHRPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="61b02738-5953-4e25-bda5-681911e8e176" ParentLink="PortDeclaration_CLRAttribute" LowerBound="43.1" HigherBound="44.1">
+                    <om:Property Name="PartnerPort" Value="LeaveRequestToHRPort" />
+                    <om:Property Name="PartnerService" Value="LeaveProject.LeaveMainOrch" />
+                    <om:Property Name="DirectBindingType" Value="PartnerPort" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="54b48856-f786-46ef-b002-0053b9c97ae1" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="45.1" HigherBound="47.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="LeaveProject.ReceivedFromHR" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ResponseFromHR" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="5b28472d-b5ef-44e6-8695-cbeab5c99ee7" ParentLink="PortDeclaration_CLRAttribute" LowerBound="45.1" HigherBound="46.1">
+                    <om:Property Name="PartnerPort" Value="ResponseFromHR" />
+                    <om:Property Name="PartnerService" Value="LeaveProject.LeaveMainOrch" />
+                    <om:Property Name="DirectBindingType" Value="PartnerPort" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="5a443dd9-b493-4480-ba4a-2aed3d52b67a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="47.1" HigherBound="49.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="LeaveProject.SendToEmpPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendToEmp" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="PhysicalBindingAttribute" OID="bb79b0ca-fa74-4ab7-98e3-9a67860bf5de" ParentLink="PortDeclaration_CLRAttribute" LowerBound="47.1" HigherBound="48.1">
+                    <om:Property Name="InPipeline" Value="Microsoft.BizTalk.DefaultPipelines.XMLReceive" />
+                    <om:Property Name="OutPipeline" Value="Microsoft.BizTalk.DefaultPipelines.XMLTransmit" />
+                    <om:Property Name="TransportType" Value="FILE" />
+                    <om:Property Name="URI" Value="C:\RameshBiztalkProject\BiztalkSolutions\FileDrop\SendToEmplFromHR\%MessageID%.xml" />
+                    <om:Property Name="IsDynamic" Value="False" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="CorrelationType" OID="60758e34-48f0-49e7-a871-b51ffeb036a0" ParentLink="Module_CorrelationType" LowerBound="32.1" HigherBound="36.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CorrelationType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PropertyRef" OID="f3915152-539b-4ce4-bc30-4fe2f1bf84a9" ParentLink="CorrelationType_PropertyRef" LowerBound="34.9" HigherBound="34.21">
+                <om:Property Name="Ref" Value="LeaveProject.CR_RequestID" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PropertyRef_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module LeaveProject
+{
+    internal porttype LeaveRequestSchemaPortType
+    {
+        oneway Operation_1
+        {
+            LeaveRequestSchema
+        };
+    };
+    internal porttype LeaveResponseSchemaPortType
+    {
+        oneway Operation_1
+        {
+            LeaveResponseSchema
+        };
+    };
+    internal porttype ReceivedFromHR
+    {
+        oneway Operation_1
+        {
+            LeaveRequestSchema
+        };
+    };
+    internal porttype SendToEmpPortType
+    {
+        oneway Operation_1
+        {
+            LeaveRequestSchema
+        };
+    };
+    internal correlationtype CorrelationType_1
+    {
+        CR_RequestID
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service LeaveMainOrch
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements LeaveRequestSchemaPortType LeaveRequestRecvPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses LeaveResponseSchemaPortType LeaveAcceptSendPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding(typeof(LeaveProject.LeaveMainOrch), "LeaveRequestToHRPort")]
+        port uses LeaveRequestSchemaPortType LeaveRequestToHRPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding(typeof(LeaveProject.LeaveMainOrch), "ResponseFromHR")]
+        port implements ReceivedFromHR ResponseFromHR;
+        [Microsoft.XLANGs.BaseTypes.PhysicalBinding("FILE", "C:\\RameshBiztalkProject\\BiztalkSolutions\\FileDrop\\SendToEmplFromHR\\%MessageID%.xml", typeof(Microsoft.BizTalk.DefaultPipelines.XMLTransmit))]
+        port uses SendToEmpPortType SendToEmp;
+        correlation CorrelationType_1 Correlation_1;
+        message LeaveRequestSchema MsgLeaveRequest;
+        message LeaveResponseSchema MsgLeaveResponse;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("52c02a01-adda-4162-98ab-d9945c92bb1b")]
+            activate receive (LeaveRequestRecvPort.Operation_1, MsgLeaveRequest, initialize Correlation_1);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3f0b88cd-1d58-4822-bda6-367da002edfa")]
+            if (MsgLeaveRequest.Details.NoOfDays>21)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("beefe3e3-02af-4b63-93d1-cde68f5fae4d")]
+                construct MsgLeaveResponse
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e1c17cbb-866a-4799-a715-800e4de826ba")]
+                    transform (MsgLeaveResponse) = LeaveProject.LeaveRequestToResponse (MsgLeaveRequest);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e16a7ba9-ca51-441b-a6f3-048a99a8237d")]
+                send (LeaveAcceptSendPort.Operation_1, MsgLeaveResponse);
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e351ad4e-d9d0-40e0-b7e6-f98bcee15fdf")]
+                send (LeaveRequestToHRPort.Operation_1, MsgLeaveRequest, Correlation_1);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c51d3a69-b6c9-4d1a-8c99-30f4bb134a4e")]
+                receive (ResponseFromHR.Operation_1, MsgLeaveRequest, Correlation_1);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("700ccd36-4bf7-4fbc-b15a-609ca04f6996")]
+                send (SendToEmp.Operation_1, MsgLeaveRequest);
+            }
+        }
+    }
+}
+

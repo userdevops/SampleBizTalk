@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><ns0:LeaveResponse xmlns:ns0="http://LeaveProject.LeaveResponseSchema"><RequestID>10</RequestID><DateOFProcessing>2015-07-27</DateOFProcessing><EmpID>10</EmpID><Reason>No Of Days of Leave  Requested       22  is greater then 21</Reason></ns0:LeaveResponse>
